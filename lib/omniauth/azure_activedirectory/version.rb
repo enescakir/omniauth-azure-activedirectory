@@ -22,7 +22,7 @@
 
 module OmniAuth
   # The release version.
-  module AzureActiveDirectory
-    VERSION = '1.1.1'
+  module AzureActivedirectory
+    VERSION = '1.1.2'
   end
 end
