@@ -14,12 +14,12 @@ Gem::Specification.new do |s|
   s.files           = `git ls-files`.split("\n")
   s.require_paths   = ['lib']
 
-  s.add_runtime_dependency 'jwt', '~> 2.0'
-  s.add_runtime_dependency 'omniauth', '~> 1.1'
+  s.add_runtime_dependency 'jwt', '~> 2.2'
+  s.add_runtime_dependency 'omniauth', '~> 2.0'
 
-  s.add_development_dependency 'rake', '~> 10.4'
+  s.add_development_dependency 'rake', '~> 13'
   s.add_development_dependency 'rspec', '~> 3.3'
-  s.add_development_dependency 'rubocop', '~> 0.32'
+  s.add_development_dependency 'rubocop', '~> 1.9'
   s.add_development_dependency 'simplecov', '~> 0.10'
-  s.add_development_dependency 'webmock', '~> 1.21'
+  s.add_development_dependency 'webmock', '~> 3'
 end
