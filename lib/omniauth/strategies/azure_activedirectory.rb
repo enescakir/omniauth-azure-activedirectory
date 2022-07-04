@@ -406,7 +406,7 @@ module OmniAuth
         # This maps RS256 -> sha256, ES384 -> sha384, etc.
         algorithm = (header['alg'] || 'RS256').sub(/RS|ES|HS/, 'sha')
         full_hash = OpenSSL::Digest.new(algorithm).digest code
-        c_hash =  Base64.urlsafe_encode64(full_hash[0..full_hash.length / 2 - 1], padding: false)
+        c_hash = Base64.urlsafe_encode64(full_hash[0..full_hash.length / 2 - 1], padding: false)
         return if c_hash == claims['c_hash']
         fail JWT::VerificationError,
              'c_hash in id token does not match auth code.'
